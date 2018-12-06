@@ -20,6 +20,6 @@ public class HuffMainCompress {
 		System.out.printf("read %d bits, wrote %d bits\n", 
 				           bis.bitsRead(),bos.bitsWritten());
 		long diff = bis.bitsRead() - bos.bitsWritten();
-		System.out.printf("bits saved = %d\n",diff);
+		System.out.printf("bits saved = %d\n",diff); 
 	}
 }
