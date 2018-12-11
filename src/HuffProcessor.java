@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
  * Changes include relying solely on a tree for header information
  * and including debug and bits read/written information
  * 
- * @author Owen Astrachan
+ * @author Adam Snowden
  */
 
 public class HuffProcessor {
@@ -93,19 +93,6 @@ public class HuffProcessor {
 			writeHeader(root.myRight, out);
 		}
 	}
-		
-/*		if (! (root.myLeft == null && root.myRight == null)) {
-			out.write(0);
-		}
-		else {
-			out.write(1);
-			out.writeBits(BITS_PER_WORD + 1, root.myValue);	
-		}
-		if (! (root.myLeft == null && root.myRight == null)) {
-			writeHeader(root.myLeft, out);
-			writeHeader(root.myRight, out);
-		*/
-		
 	
 
 	private void writeCompressedBits(String[] codings, BitInputStream in, BitOutputStream out) {
